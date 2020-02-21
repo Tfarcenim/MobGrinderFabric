@@ -1,11 +1,14 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.tfar.mobgrinder.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "BlockMixin",
+    "EntityMixin",
+    "LivingEntityAccessor",
+    "LivingEntityMixin"
   ],
   "client": [
-    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1
